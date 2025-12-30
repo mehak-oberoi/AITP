@@ -1,0 +1,73 @@
+mishtee_css = """
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Lato:wght@300;400&display=swap');
+
+/* Main Container & Background */
+body, .gradio-container {
+    background-color: #FAF9F6 !important;
+    color: #333333 !important;
+    font-family: 'Lato', sans-serif; /* Lightweight Sans default */
+}
+
+/* Typography: Headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif !important;
+    color: #333333;
+    letter-spacing: 1.5px; /* Spaced out */
+    margin-bottom: 1.5rem;
+}
+
+/* Buttons: Sober Terracotta, Sharp Lines */
+button.primary-btn, 
+button.secondary-btn, 
+.gr-button {
+    background-color: #C06C5C !important;
+    color: #FFFFFF !important;
+    border: none !important;
+    border-radius: 0px !important; /* Sharp corners */
+    padding: 12px 24px !important;
+    box-shadow: none !important;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #A65D4F !important; /* Slightly darker interaction */
+}
+
+/* Input Fields & Boxes: Minimalist borders */
+input, textarea, .gr-box, .gr-input, .gr-panel {
+    background-color: #FFFFFF !important;
+    border: 1px solid #E5E5E5 !important; /* Thin border */
+    border-radius: 0px !important; /* No rounded shapes */
+    box-shadow: none !important; /* No shadows */
+    color: #333333 !important;
+}
+
+/* Tables: Lightweight Sans-Serif */
+table, .gr-table {
+    font-family: 'Lato', sans-serif !important;
+    font-weight: 300 !important;
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid #E5E5E5 !important;
+    padding: 12px !important;
+    text-align: left;
+}
+
+/* Layout: Significant Whitespace */
+.gradio-row, .gradio-column {
+    gap: 2rem !important;
+    padding: 2rem 0 !important;
+}
+
+/* Remove default Gradio bubbly-ness/shadows globally */
+* {
+    box-shadow: none !important;
+    text-shadow: none !important;
+}
+"""
